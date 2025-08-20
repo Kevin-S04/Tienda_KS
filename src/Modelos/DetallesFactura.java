@@ -31,7 +31,7 @@ public class DetallesFactura {
             ps.setDouble(4, precioUnitario);
             ps.setDouble(5, totalLinea);
 
-            return ps.executeUpdate() > 0; // true si se insertó
+            return ps.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -47,7 +47,7 @@ public class DetallesFactura {
             ps.setInt(1, cantidad);
             ps.setInt(2, idProducto);
 
-            return ps.executeUpdate() > 0; // true si se actualizó
+            return ps.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
         }
